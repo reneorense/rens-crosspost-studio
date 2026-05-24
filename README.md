@@ -93,4 +93,4 @@ Push this repository directly to GitHub and link it to your Vercel account, or i
 vercel deploy --prod
 ```
 The build configuration `npm run build` will build the static assets into `dist/` and expose the API routes under `/api/*` automatically.
-
+Deploy trigger
