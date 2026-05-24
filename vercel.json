@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/accounts/:id",
+      "destination": "/api/accounts?id=:id"
+    },
+    {
+      "source": "/api/posts/:id/retry",
+      "destination": "/api/posts?id=:id&action=retry"
+    },
+    {
+      "source": "/api/posts/:id",
+      "destination": "/api/posts?id=:id"
+    },
+    {
+      "source": "/api/media/:id",
+      "destination": "/api/media?id=:id"
+    },
+    {
+      "source": "/api/scheduled/:id/cancel",
+      "destination": "/api/scheduled?id=:id"
+    },
+    {
+      "source": "/api/cron/publish-scheduled",
+      "destination": "/api/cron/publish-scheduled"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/publish-scheduled",
+      "schedule": "*/5 * * * *"
+    }
+  ]
+}

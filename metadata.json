@@ -1,0 +1,6 @@
+{
+  "name": "REN's CrossPost Studio",
+  "description": "A full-stack personal social media cross-posting and scheduling platform supporting Facebook, Instagram, TikTok, X, LinkedIn, YouTube, Pinterest, and Threads with official APIs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
